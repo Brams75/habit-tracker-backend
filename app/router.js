@@ -5,7 +5,7 @@ const passport = require("passport");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send("Welcome to the API habit-tracker");
+  res.json("Welcome to the API habit-tracker");
 });
 
 router.post("/auth/register_login", (req, res, next) => {

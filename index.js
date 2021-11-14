@@ -1,5 +1,5 @@
 require("dotenv").config();
-const PORT = process.env.PORT | 5050;
+const PORT = process.env.PORT | 5000;
 const express = require("express");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
@@ -33,6 +33,6 @@ app.use(passport.session());
 
 app.use("/api", router);
 
-app.listen(PORT, () => {
-  console.log(`App listening at http://localhost:${PORT}`);
+app.listen(process.env.PORT || 5000, () => {
+  console.log(`App listening at http://localhost:${process.env.PORT}`);
 });
