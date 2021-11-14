@@ -1,5 +1,5 @@
 ### Index
-GET http://localhost:8187/api/
+GET http://localhost:8187/api
 
 ### création d'un utilisateur
 POST http://localhost:8187/api/auth/register_login
